@@ -1,0 +1,56 @@
+
+
+<div data-page="cards" class="page page-on-center dashboard">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+
+      </div>
+      <div class="center">Mobile Shaprepoint POC</div>
+      <div class="right">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="content-block">
+      <div data-page="login-screen" class="">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">Log in</div>
+          <form>
+            <div class="list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Username</div>
+                    <div class="item-input">
+                      <input type="text" name="username" placeholder="Your username" ng-model='userObj.userName'/>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Password</div>
+                    <div class="item-input">
+                      <input type="password" name="password" placeholder="Your password" ng-model='userObj.password'/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list-block">
+              <ul>
+                <li><a href="#" class="item-link list-button sign-in-button" ng-click="doLogIn(userObj)">Sign In</a></li>
+              </ul>
+              <div class="list-block-label">
+                <p>Click Sign In to close Login Screen</p>
+                <p>{{response}}</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
